@@ -7,8 +7,9 @@ import androidx.recyclerview.widget.RecyclerView
 
 class MainAdapter: RecyclerView.Adapter<CustomViewHolder>(){
 
+
     override fun getItemCount(): Int {
-        return 3
+        return 8
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): CustomViewHolder {
@@ -18,11 +19,11 @@ class MainAdapter: RecyclerView.Adapter<CustomViewHolder>(){
     }
 
     override fun onBindViewHolder(holder: CustomViewHolder, position: Int) {
-
+        
     }
 
 }
 
-class CustomViewHolder(v: View): RecyclerView.ViewHolder (v){
+class CustomViewHolder(val view: View): RecyclerView.ViewHolder (view){
 
 }
